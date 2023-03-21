@@ -16,6 +16,16 @@ const UsuarioSchema = mongoose.Schema({
         required: true
       
     }],
+    nombrePrivilegio: {
+        type: String,
+        required: true
+      
+    },
+    tipoPrivilegio: {
+        type: Number,
+        required: true
+      
+    },
 
     fechaCreacionPrivilegio: {
         type: Date,

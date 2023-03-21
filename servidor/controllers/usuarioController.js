@@ -67,18 +67,5 @@ exports.leerUsuarioID = async (req,res) => {
 
 exports.eliminarUsuario = async (req,res) => {
 
-    try {
-        let nombreUsuario = await Usuario.findById(req.params.id);
-
-        if(!nombreUsuario ){
-            res.status(404).json({msg: 'Usuario inexistente'})
-        }
-        
-        await Usuario.findOneAndRemove({ _id: req.params.id })
-        res.json({msg: 'Producto eliminado con exito'});
-
-    } catch (error) {
-        console.log(error);
-        res.status(500).send('Hubo un error');
-    }
+   
 }

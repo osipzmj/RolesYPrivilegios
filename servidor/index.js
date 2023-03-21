@@ -17,5 +17,5 @@ app.use('/privilegios', require('./routes/privilegios'));
 
 
 app.listen(4000, () => {
-    console.log('El servidor se esta corriendo')
+    console.log('El servidor esta funcionando correctamente')
 })
